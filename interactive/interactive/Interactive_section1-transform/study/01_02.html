@@ -5,10 +5,32 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
+    <link rel="stylesheet" href="./reset.css" />
+    <style>
+      .box-container {
+        display: flex;
+      }
+      .box {
+        width: 100px;
+        height: 100px;
+        border: 2px solid black;
+        background: rgba(255, 255, 0, 0.7);
+        transition: 2s;
+      }
+      .box:hover {
+        transform: scale(2);
+        /* transform: scale(2) rotate(15deg); */
+        /* transform: skew(-10deg); */
+        /* transform: translate(-10px, 20px); */
+
+        /* transform-origin: right bottom; */
+        /* transform-origin: 0% 0%; */
+        /* transform-origin: 10px 10px; */
+      }
+    </style>
   </head>
   <body>
     <h1>CSS Transform</h1>
-
     <p>
       Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolores vel
       magni dolore rerum quae, velit perspiciatis voluptatum facere animi
@@ -23,12 +45,18 @@
       commodi! Accusantium voluptatum rerum deserunt maiores quasi voluptate et
       earum.
     </p>
-    <div class="box-container"></div>
+    <div class="box-container">
+      <div class="box">A</div>
+      <div class="box">B</div>
+      <div class="box">C</div>
+      <div class="box">D</div>
+      <div class="box">E</div>
+    </div>
     <p>
       Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis,
       inventore. Quae iusto aperiam eius totam tempora necessitatibus ab amet
       exercitationem, deserunt, libero omnis explicabo voluptatibus, cumque
-      dicta dolores quo culpa.                  
+      dicta dolores quo culpa.
     </p>
   </body>
 </html>
